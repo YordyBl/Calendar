@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Adviento</title>
+
+  <!-- Incluir el archivo de estilo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ICONO (Calendario de adviento) CON MÚSICA -->
+  <audio id="audio-player" loop>
+    <source src="URL DE LA MUSICA.MP3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+ <div class="div-head">
+  <!-- Usamos una imagen como botón -->
+  <img src="./buttonHappy.png" id="play-button" class="button-image shake" alt="Reproducir Música" style="cursor: pointer;">
+
+ </div>
+
+  <!-- ICONOS DEL CALENDARIO FOTOS, REGALO Y CAMBIO EN FECHA -->
+  <div class="puertas-adviento">
+    <a class="puerta" id="puerta-1" href="#" data-elementor-open-lightbox="yes" data-dia="1">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 1">
+    </a>
+    <a class="puerta" id="puerta-2" href="#" data-elementor-open-lightbox="yes" data-dia="2">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 2">
+    </a>
+    <a class="puerta" id="puerta-3" href="#" data-elementor-open-lightbox="yes" data-dia="3">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 3">
+    </a>
+    <a class="puerta" id="puerta-4" href="#" data-elementor-open-lightbox="yes" data-dia="4">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 4">
+    </a>
+    <a class="puerta" id="puerta-5" href="#" data-elementor-open-lightbox="yes" data-dia="5">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 5">
+    </a>
+    <a class="puerta" id="puerta-6" href="#" data-elementor-open-lightbox="yes" data-dia="6">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 6">
+    </a>
+    <a class="puerta" id="puerta-7" href="#" data-elementor-open-lightbox="yes" data-dia="7">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 7">
+    </a>
+    <a class="puerta" id="puerta-8" href="#" data-elementor-open-lightbox="yes" data-dia="8">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 8">
+    </a>
+    <a class="puerta" id="puerta-9" href="#" data-elementor-open-lightbox="yes" data-dia="9">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 9">
+    </a>
+    <a class="puerta" id="puerta-10" href="#" data-elementor-open-lightbox="yes" data-dia="10">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 10">
+    </a>
+    <a class="puerta" id="puerta-11" href="#" data-elementor-open-lightbox="yes" data-dia="11">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 11">
+    </a>
+    <a class="puerta" id="puerta-12" href="#" data-elementor-open-lightbox="yes" data-dia="12">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 12">
+    </a>
+    <a class="puerta" id="puerta-13" href="#" data-elementor-open-lightbox="yes" data-dia="13">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 13">
+    </a>
+    <a class="puerta" id="puerta-14" href="#" data-elementor-open-lightbox="yes" data-dia="14">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 14">
+    </a>
+    <a class="puerta" id="puerta-15" href="#" data-elementor-open-lightbox="yes" data-dia="15">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 15">
+    </a>
+    <a class="puerta" id="puerta-16" href="#" data-elementor-open-lightbox="yes" data-dia="16">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 16">
+    </a>
+    <a class="puerta" id="puerta-17" href="#" data-elementor-open-lightbox="yes" data-dia="17">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 17">
+    </a>
+    <a class="puerta" id="puerta-18" href="#" data-elementor-open-lightbox="yes" data-dia="18">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 18">
+    </a>
+    <a class="puerta" id="puerta-19" href="#" data-elementor-open-lightbox="yes" data-dia="19">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 19">
+    </a>
+    <a class="puerta" id="puerta-20" href="#" data-elementor-open-lightbox="yes" data-dia="20">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 20">
+    </a>
+    <a class="puerta" id="puerta-21" href="#" data-elementor-open-lightbox="yes" data-dia="21">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 21">
+    </a>
+    <a class="puerta" id="puerta-22" href="#" data-elementor-open-lightbox="yes" data-dia="22">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 22">
+    </a>
+    <a class="puerta" id="puerta-23" href="#" data-elementor-open-lightbox="yes" data-dia="23">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 23">
+    </a>
+    <a class="puerta" id="puerta-24" href="#" data-elementor-open-lightbox="yes" data-dia="24">
+      <img src="URL IMAGEN DE LA PUERTA" alt="Puerta 24">
+    </a>
+  </div>
+
+  <!-- Modal de regalo (lightbox) -->
+  <div id="modal-regalo" class="modal">
+    <span class="close">&times;</span>
+    <img id="regalo-img" src="" alt="Regalo">
+  </div>
+
+  <!-- Incluir el archivo de script -->
+  <script src="script.js"></script>
+</body>
+</html>
